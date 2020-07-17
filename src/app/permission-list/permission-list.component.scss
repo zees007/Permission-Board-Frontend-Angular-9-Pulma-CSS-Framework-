@@ -1,0 +1,53 @@
+@import "../permission-board/src/main-style";
+
+.permission-list-section{
+  display: flex;
+  padding: 50px;
+  //background-color: aqua;
+  justify-content: center;
+  align-items: center;
+  //background: linear-gradient(75deg, #ffe9f4, white);
+  background: linear-gradient(75deg, $green, white);
+
+  .permission-list-container{
+
+    display: flex;
+    max-width: 1200px;
+    height: 100%;
+    width: 100%;
+    background-color: floralwhite;
+
+    //background: linear-gradient(75deg, $green, white);
+
+    .permission_list_box{
+      display: flex;
+      flex-direction: column;
+      flex-basis: 0;
+      flex-grow: 1;
+      align-items: center;
+
+      h1{
+        font-family: Lato;
+        font-weight: 900;
+        font-size: 24px;
+        color: $green;
+        text-transform: uppercase;
+        margin-top: 10px;
+
+
+      }
+      .list-space{
+        padding: 8px;
+        display: flex;
+        float: left;
+        flex-direction: column;
+      }
+
+
+    }
+
+  }
+
+}
+
+

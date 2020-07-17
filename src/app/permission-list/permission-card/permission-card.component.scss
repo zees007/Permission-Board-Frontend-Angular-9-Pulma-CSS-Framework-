@@ -1,0 +1,184 @@
+@import "../permission-board/src/main-style";
+
+
+.root{
+  display: flex;
+  width: 100%;
+  //position: relative;
+
+}
+.xIconButton{
+  //position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: $dark;
+  background-position: center;
+  right: -15px;
+  top: -15px;
+  cursor: pointer;
+  background-image: url("src/assets/delete_icon.svg");
+  margin-left: 20px;
+  margin-top: 40px;
+  transform: scale(1);
+  &:hover{
+    transform: scale(1.2);
+  }
+
+}
+
+
+.form_item{
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  padding: 10px;
+  background-color: $light-green;
+  border-radius: 5px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+
+  .fullname{
+    flex-grow: 1;
+    margin-left: 5px;
+    padding: 10px;
+    background-color: $light-gray;
+    h1{
+      align-items: center;
+      justify-content: center;
+      font-family: Lato;
+      font-weight: 900;
+      color: $dark;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+    p{
+      font-family: Lato;
+      font-weight: 900;
+      color: $green;
+
+    }
+  }
+  .email{
+    flex-grow: 1;
+    margin-left: 5px;
+    padding: 10px;
+    background-color: $light-gray;
+
+    h1{
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-family: Lato;
+      font-weight: 900;
+      color: $dark;
+      margin-bottom: 10px;
+    }
+    p{
+      font-family: Lato;
+      font-weight: 900;
+      color: $green;
+    }
+  }
+  .contact{
+    flex-grow: 1;
+    margin-left: 5px;
+    padding: 10px;
+    background-color: $light-gray;
+
+    h1{
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-family: Lato;
+      font-weight: 900;
+      color: $dark;
+      margin-bottom: 10px;
+    }
+    p{
+      font-family: Lato;
+      font-weight: 900;
+      color: $green;
+    }
+  }
+  .createDate{
+    flex-grow: 1;
+    margin-left: 5px;
+    padding: 10px;
+    background-color: $light-gray;
+
+    h1{
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-family: Lato;
+      font-weight: 900;
+      color: $dark;
+      margin-bottom: 10px;
+    }
+    p{
+      font-family: Lato;
+      font-weight: 900;
+      color: $green;
+    }
+  }
+  .purpose{
+    flex-grow: 1;
+    margin-left: 5px;
+    padding: 10px;
+    background-color: $light-gray;
+
+    h1{
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-family: Lato;
+      font-weight: 900;
+      color: $dark;
+      margin-bottom: 10px;
+    }
+    p{
+      font-family: Lato;
+      font-weight: 900;
+      color: $green;
+    }
+
+  }
+
+
+  &:hover{
+    background-color: darken($light-red, 5%);
+  }
+}
+
+.access_log{
+  p{
+    background-image: url(src/assets/access_log1.png);
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-left: 22px;
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+    transform: scale(1);
+    cursor: pointer;
+
+
+    &:hover{
+      transform: scale(1.2);
+    }
+}
+}
+button{
+  background-color: rgba(255,47,27,0.72);
+  p{
+    color: white;
+  }
+}
+#element-toggle {
+  display: none;
+}
+#element-toggle:checked #myModal {
+  display: flex;
+}
+

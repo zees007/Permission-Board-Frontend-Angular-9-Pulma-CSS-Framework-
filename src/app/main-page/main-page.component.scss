@@ -1,0 +1,57 @@
+@import "../permission-board/src/main-style";
+img{
+  height: 200px;
+  width: 200px;
+}
+
+
+
+.top-bar{
+
+  display: flex;
+  height: 120px;
+  width: 100%;
+  background: linear-gradient(75deg, white, $purple, rgb(173, 203, 231));
+  .logo{
+    background-image: url("src/assets/logo1.png");
+    background-position: center;
+    //background-color: #dc3900;
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  h1{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: Lato;
+    font-weight: 900;
+    color: $dark;
+    margin-left: 600px;
+    margin-top: 40px;
+  }
+}
+
+.form-section{
+  display: flex;
+  //width: 100%;
+
+  background: linear-gradient(75deg, pink, white);
+  justify-content: center;
+  align-items: center;
+
+  .form-section-container{
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    //max-width: 100%;
+    max-width: 800px;
+    height: 450px;
+    width: 100%;
+    background: linear-gradient(75deg, #ffe9f4, white);
+
+  }
+}

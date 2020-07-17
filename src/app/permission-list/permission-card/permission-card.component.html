@@ -1,0 +1,53 @@
+
+<div class="root" >
+  <div class="form_item" (click)="onCardClick()" disabled="!isDisable" >
+    <div class="fullname">
+      <h1>Name</h1>
+      <p>{{finalData.name}}</p>
+    </div>
+    <div class="email">
+      <h1>Email</h1>
+      <p>{{finalData.email}}</p>
+    </div>
+    <div class="contact">
+      <h1>Contact</h1>
+      <p>{{finalData.contact}}</p>
+    </div>
+    <div class="createDate">
+      <h1>Permission Requested Date</h1>
+      <p>{{finalData.createdDate |date}}</p>
+    </div>
+    <div class="purpose">
+      <h1>Purpose</h1>
+      <p>{{finalData.purpose}}</p>
+    </div>
+
+  </div>
+
+
+  <div class="approve" style="margin-left: 20px;" >
+    <button class="button" type="submit" *ngIf="!isApproveBtn" (click)="onApproveClick()" >
+      <p>Approve</p>
+    </button>
+    <button class="button is-primary" type="submit" *ngIf="isApproveBtn" (click)="onApprovedClick()" >
+      <p >Approved</p>
+    </button>
+    <div class="access_log" style="margin-top: 30px">
+      <!--<p (click)="openAccessLogPopUp(item)"></p>-->
+      <p (click)="openAccessLogPopUp(popUpData)" >
+
+    </div>
+
+   </div>
+
+
+
+  <div class="xIconButton" (click)="xButtonClick()"> </div>
+
+</div>
+
+
+
+
+
+

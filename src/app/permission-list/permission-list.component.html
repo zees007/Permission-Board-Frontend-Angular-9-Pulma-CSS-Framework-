@@ -1,0 +1,22 @@
+<section class="permission-list-section">
+  <div class="permission-list-container">
+    <div class="permission_list_box">
+    <h1>Permissions</h1>
+      <div class="list-space">
+        <div *ngFor="let item of permissionDatas">
+      <app-permission-card style="display:block; margin-bottom: 20px"
+                           [finalData]="item"
+                            (cardClick)="updateOnClick(item)"
+                           (xButtonClicked)="deleteOnClick()">
+      </app-permission-card>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+</section>
+

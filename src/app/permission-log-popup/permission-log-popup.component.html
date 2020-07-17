@@ -1,0 +1,18 @@
+<div class="pop-up">
+<h1>Access Log</h1>
+  <hr style="margin-top: 10px">
+  <div class="check-in">
+  <button class="button is-success" type="submit" (click)="onCheckIn()" name="checkIn" [disabled]="isInBtn">
+    <p >Check In</p>
+  </button>
+    <div class="x">{{todaysDataTimeCheckin}}</div>
+  </div>
+
+  <div class="check-out">
+  <button class="button is-success" type="submit" (click)="onCheckOut()" name="checkOut"[disabled]="isOutBtn">
+    <p >Check Out</p>
+  </button>
+    <div class="y">{{todaysDataTimeCheckOut}}</div>
+  </div>
+
+</div>

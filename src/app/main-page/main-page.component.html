@@ -1,0 +1,17 @@
+
+
+<div class="top-bar">
+  <div class="logo"></div>
+  <h1>Permission Board</h1>
+
+</div>
+
+
+<section class="form-section">
+  <div class="form-section-container">
+    <app-permission-creation-form (formSubmit)="addFormData($event)"></app-permission-creation-form>
+  </div>
+</section>
+<app-permission-list style="display: block;" [permissionDatas]="permissionDataItems" (delete)="deleteItem($event)"></app-permission-list>
+<!--<app-permission-card></app-permission-card>-->
+
